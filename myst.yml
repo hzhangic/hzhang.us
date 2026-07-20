@@ -1,21 +1,16 @@
 version: 1
 project:
-  title: Jane Doe
-  description: Personal website of Jane Doe, Assistant Professor at Example University, building open-source tools for data science.
-  # thumbnail: images/profile-thumbnail.webp
+  title: Hongyu Zhang
+  description: Personal website of Hongyu Zhang
+  # thumbnail: images/globe_logo.png
   # authors:
-  #   - name: Jane Doe
-  #     email: jane.doe@example.com
-  #     orcid: 0000-0000-0000-0000
-  #     url: https://example.com
-  #     affiliations:
-  #       - Example University
+  #   - name: Hongyu Zhang
   copyright: '2026'
   keywords:
-    - Data Science
-    - Open-source Software
-    - Machine Learning
-  # github: username/repo
+    - Data ethics
+    - GIScience
+    - GeoAI
+  # github: hzhangic
   exclude:
     - _build
     - Thumbs.db
@@ -48,20 +43,22 @@ project:
       hidden: true
 site:
   options:
-    logo: logo.png
-    logo_dark: logo.png
+    logo: globe_logo.png
+    logo_dark: globe_logo.png
     favicon: fav.ico
     style: custom.css
     # analytics_google: G-XXXXXXXXXX
     folders: true
   actions:
-    - title: RSS
-      url: https://opengeos.org/myst-cv-template/rss.xml
+    # - title: RSS
+    #   url: https://opengeos.org/myst-cv-template/rss.xml
   template: book-theme
   parts:
     primary_sidebar_footer: ''
     footer: |
       [CV (PDF)](cv.pdf) |
-      [GitHub](https://github.com/username) |
-      [LinkedIn](https://www.linkedin.com/in/username) |
-      [Twitter](https://twitter.com/username)
+      [GitHub](https://github.com/hzhangic) |
+      [LinkedIn](https://www.linkedin.com/in/hongyu-zhang/) |
+      [Twitter](https://x.com/hzhangus) | 
+      [Google Scholar](https://scholar.google.ca/citations?user=sWBgI7UAAAAJ&hl=en) |
+      [ORCID](https://orcid.org/my-orcid?orcid=0000-0002-5137-6177)
