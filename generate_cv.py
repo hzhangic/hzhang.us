@@ -236,30 +236,31 @@ def gen_preamble():
 
     TODO: Update author information below with your own details.
     """
-    return """#import "@preview/modern-cv:0.9.0": *
+    return """#import "@preview/modern-cv:0.10.0": *
 
 // Use Font Awesome 6 icons and replace "Résumé" with "CV" in footer
 #fa-version("6")
 #show "Résumé": "CV"
 
+#set text(font: "Source Sans 3")
+
 #show: resume.with(
   author: (
-    firstname: "Jane",
-    lastname: "Doe",
-    email: "jane.doe@example.com",
-    phone: "(+1) 234-567-8901",
-    homepage: "https://example.com",
-    github: "username",
-    address: "123 Science Building, Example University, Anytown, ST 12345",
+    firstname: "Hongyu",
+    lastname: "Zhang",
+    email: "honzhang@umass.edu",
+    phone: "(+1) 413-545-9365",
+    homepage: "https://hzhang.us",
+    github: "hzhangic",
+    address: "100 Carlson Ave, Newton, MA 02459",
     positions: (
-      "Assistant Professor",
-      "Data Scientist",
+      "Lecturer",
     ),
     custom: (
-      (text: "username", icon: "twitter", link: "https://twitter.com/username"),
-      (text: "Jane Doe", icon: "linkedin", link: "https://www.linkedin.com/in/username"),
-      (text: "Jane Doe", icon: "google-scholar", link: "https://scholar.google.com"),
-      (text: "0000-0000-0000-0000", icon: "orcid", link: "https://orcid.org/0000-0000-0000-0000"),
+      (text: "hzhangus", icon: "twitter", link: "https://x.com/hzhangus"),
+      (text: "Hongyu Zhang", icon: "linkedin", link: "https://www.linkedin.com/in/hongyu-zhang/"),
+      (text: "Hongyu Zhang", icon: "google-scholar", link: "https://scholar.google.ca/citations?user=sWBgI7UAAAAJ&hl=en"),
+      (text: "0000-0002-5137-6177", icon: "orcid", link: "https://orcid.org/my-orcid?orcid=0000-0002-5137-6177"),
     ),
   ),
   profile-picture: none,
@@ -275,7 +276,7 @@ def gen_preamble():
 #set heading(bookmarked: true)
 
 // Set PDF document title
-#set document(title: "Jane Doe - CV")"""
+#set document(title: "Hongyu Zhang - CV")"""
 
 
 def gen_education(about):
