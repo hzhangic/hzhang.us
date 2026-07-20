@@ -2,7 +2,7 @@
 title: Hongyu Zhang
 subtitle: Open-Source Software Engineer & Data Scientist
 description: Hongyu Zhang, Assistant Professor at Example University, builds open-source tools for data science and machine learning.
-# thumbnail: images/globe_logo.png
+thumbnail: images/globe_logo.png
 ---
 
 ::::{grid} 1 1 2 2
@@ -10,7 +10,7 @@ description: Hongyu Zhang, Assistant Professor at Example University, builds ope
 :::{grid-item}
 :columns: 12 12 4 4
 
-```{image} profile.jpeg
+```{image} profile.png
 :alt: Hongyu Zhang
 :width: 95%
 ```
