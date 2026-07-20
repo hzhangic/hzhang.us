@@ -2,7 +2,7 @@ version: 1
 project:
   title: Hongyu Zhang
   description: Personal website of Hongyu Zhang
-  # thumbnail: images/globe_logo.png
+  thumbnail: images/globe_logo.png
   # authors:
   #   - name: Hongyu Zhang
   copyright: '2026'
