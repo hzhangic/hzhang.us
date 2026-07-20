@@ -128,7 +128,7 @@ Latest updates and milestones
 - **2026-07-13** - Joined the Early Career Editorial Board of [*Digital Geography and Society*](https://www.sciencedirect.com/journal/digital-geography-and-society)
 - **2026-06-30** - Joined the Research Committee of the [University Consortium for Geographic Information Science (UCGIS)](https://www.ucgis.org/)
 - **2026-06-15** - Presented at the [Workshop on GeoAI for Autonomous Spatial Analysis](https://geoai4asa.netlify.app/)
-- **2026-06-04** - Received the [Open Education Initiative (OEI) Grant](https://guides.library.umass.edu/OER/open-education-initiative) from University Libraries 
+- **2026-06-04** - Received the [Open Education Initiative (OEI) Grant](https://guides.library.umass.edu/OER/open-education-initiative) from UMass Amherst Libraries
 - **2026-04-27** - Elected as an At-Large Board Member of the [Digital Geographies Specialty Group](https://www.aag.org/groups/digital-geographies/), American Association of Geographers (AAG)
 
 [See all news →](pages/news)
