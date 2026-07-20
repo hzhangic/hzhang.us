@@ -242,7 +242,9 @@ def gen_preamble():
 #fa-version("6")
 #show "Résumé": "CV"
 
-#set text(font: "Source Sans 3")
+#set text(
+  font: "Source Sans Pro",
+)
 
 #show: resume.with(
   author: (
