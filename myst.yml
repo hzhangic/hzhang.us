@@ -45,7 +45,7 @@ site:
   options:
     logo: globe_logo.png
     logo_dark: globe_logo.png
-    favicon: fav.ico
+    favicon: globe_logo.png
     style: custom.css
     # analytics_google: G-XXXXXXXXXX
     folders: true
