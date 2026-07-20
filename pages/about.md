@@ -18,9 +18,12 @@ Dr. Hongyu Zhang is a lecturer in the Department of Earth, Geographic, and Clima
 
 | Year | Degree | Institution | Dissertation/Thesis |
 |------|--------|-------------|----------------------|
-| 2024 | **Ph.D.** in Geography | **McGill University**, Montréal, QC | *Place-Based Privacy: Understanding Attitudes and Behaviours Across China and Beyond* |
-| 2017 | **M.Sc.** in Geography | **Western University**, London, ON | *Quality Assessment of the Canadian OpenStreetMap Road Networks* |
-| 2015 | **B.E.S.** in Geomatics (Minor in Computer Science)<br>Diploma of Excellence in Geographic Information Systems | **University of Waterloo**, Waterloo, ON | — |
+| 2024 | **Ph.D.** in Geography | **McGill University** | *Place-Based Privacy: Understanding Attitudes and Behaviours Across China and Beyond* |
+| 2017 | **M.Sc.** in Geography | **Western University** | *Quality Assessment of the Canadian OpenStreetMap Road Networks* |
+| 2015 | **B.E.S.** in Geomatics | **University of Waterloo** | — |
+| 2015 | Diploma of Excellence in Geographic Information Systems | **University of Waterloo** | — |
+| 2026 | AWS AI Practitioner Challenge | **Udacity** | — |
+| 2025 | Generative AI Nanodegree | **Udacity** | — |
 
 ---
 
