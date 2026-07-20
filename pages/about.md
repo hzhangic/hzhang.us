@@ -1,6 +1,6 @@
 ---
 title: About
-description: Biography, education, and academic appointments of Jane Doe.
+description: Biography, education, and academic appointments of Hongyu Zhang.
 keywords:
   - About
   - Biography
@@ -10,17 +10,17 @@ keywords:
 
 # About
 
-Dr. Jane Doe is an Assistant Professor in the Department of Computer Science at Example University. Her research focuses on developing open-source tools for data science and machine learning. She is the creator and maintainer of several widely used open-source Python packages. Dr. Doe's work bridges software engineering, data science, and artificial intelligence to make large-scale data analytics more accessible, reproducible, and intelligent.
+Dr. Hongyu Zhang is a lecturer in the Department of Earth, Geographic, and Climate Sciences at the University of Massachusetts Amherst. His research focuses on data ethics in spatial data science and GeoAI. He is the lead organizer of the GIScience for Human Experience and Responsibility (GISER) Symposium at the American Association of Geographers (AAG) Annual Meeting and is actively involved in the Digital Geographies and Environmental Perception and Behavioral Geography Specialty Groups. Dr. Zhang's work bridges human geography and GIScience to advance a more just and sustainable future.
 
 ---
 
 ## Education
 
 | Year | Degree | Institution | Dissertation/Thesis |
-|------|--------|-------------|---------------------|
-| 2020 | **Ph.D.** in Computer Science | Example University, USA | *Scalable machine learning for large-scale data analysis* |
-| 2016 | **M.S.** in Computer Science | Example University, USA | *Distributed computing frameworks for data-intensive applications* |
-| 2014 | **B.S.** in Computer Science | Example College, USA | *Efficient algorithms for graph processing* |
+|------|--------|-------------|----------------------|
+| 2024 | **Ph.D.** in Geography | **McGill University**, Montréal, QC | *Place-Based Privacy: Understanding Attitudes and Behaviours Across China and Beyond* |
+| 2017 | **M.Sc.** in Geography | **Western University**, London, ON | *Quality Assessment of the Canadian OpenStreetMap Road Networks* |
+| 2015 | **B.E.S.** in Geomatics (Minor in Computer Science)<br>Diploma of Excellence in Geographic Information Systems | **University of Waterloo**, Waterloo, ON | — |
 
 ---
 
@@ -28,6 +28,4 @@ Dr. Jane Doe is an Assistant Professor in the Department of Computer Science at 
 
 | Period | Position |
 |--------|----------|
-| 2023--present | Assistant Professor, Department of Computer Science, Example University |
-| 2020--2023 | Postdoctoral Researcher, Data Science Lab, Example Institute |
-| 2018--2020 | Research Assistant, Department of Computer Science, Example University |
+| 2024--present | Lecturer, Department of Earth, Geographic, and Climate Sciences, University of Massachusetts Amherst |
