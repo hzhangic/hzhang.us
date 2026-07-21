@@ -19,7 +19,7 @@ A running log of talks, publications, and milestones, organized by year. The cur
 - **2026-06-24** - Completed the [AWS AI Practitioner Challenge](https://www.udacity.com/certificate/e/71a2e728-32b6-11f1-8cc7-df26d968c7b3) on Udacity
 - **2026-06-15** - Presented at the [Workshop on GeoAI for Autonomous Spatial Analysis](https://geoai4asa.netlify.app/)
 - **2026-06-04** - Received the [Open Education Initiative (OEI) Grant](https://guides.library.umass.edu/OER/open-education-initiative) from UMass Amherst Libraries
-- **2026-05-26** - Published a chapter titled [Generative AI and the Future of GIScience Education](https://doi.org/10.3233/FAIA260479) with Dr. Grant McKenzie and Dr. Junghwan Kim in the book *Geography According to Foundation Models*
+- **2026-05-26** - Published a chapter titled [Generative AI and the Future of GIScience Education](https://journals.sagepub.com/doi/10.3233/FAIA260479) with Dr. Grant McKenzie and Dr. Junghwan Kim in the book *Geography According to Foundation Models*
 - **2026-04-30** - Published a journal article titled [Citizen Science and Geoprivacy: Empirical Analysis of Location Masking in Large-Scale Crowdsensing Networks](https://doi.org/10.1080/00330124.2026.2656680) with Dr. Yue Lin and Qian Fang Yeap in *The Professional Geographer*
 - **2026-04-28** - Awarded the [Mutual Mentoring Grant](https://www.umass.edu/faculty-development/mutual-mentoring/mutual-mentoring-grant-program) from UMass Amherst Office of Faculty Development
 - **2026-04-27** - Elected as an At-Large Board Member of the [Digital Geographies Specialty Group](https://www.aag.org/groups/digital-geographies/), American Association of Geographers (AAG)
