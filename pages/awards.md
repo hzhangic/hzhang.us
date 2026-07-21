@@ -9,7 +9,7 @@ keywords:
 
 # Awards & Honors
 
-A selection of awards and honors recognizing contributions to teaching and research.
+A selection of awards and honors recognizing scholarly contributions.
 
 | Year | Award | Value |
 |------|-------|-------|
