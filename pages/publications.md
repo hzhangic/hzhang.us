@@ -63,9 +63,9 @@ keywords:
 
 ## Refereed Short Papers
 
-- **Zhang, H.** (2025). "Vector-Based Super-Resolution Mapping with the Population Dynamics Foundation Model." *Abstracts of the International Cartographic Conference*. https://ica-abs.copernicus.org/articles/10/321/2025/ica-abs-10-321-2025.pdf
+- **Zhang, H.** (2025). "Vector-Based Super-Resolution Mapping with the Population Dynamics Foundation Model." *Abstracts of the International Cartographic Conference*. https://doi.org/10.5194/ica-abs-10-321-2025
 
-- **Zhang, H.**, McKenzie, G. (2025). "Evaluating Spatial Dependency in Regional Similarities of the Population Dynamics Foundation Model." *Association of Geographic Information Laboratories in Europe Conference (AGILE)*. https://zenodo.org/records/15335931
+- **Zhang, H.**, McKenzie, G. (2025). "Evaluating Spatial Dependency in Regional Similarities of the Population Dynamics Foundation Model." *Association of Geographic Information Laboratories in Europe Conference (AGILE)*. https://doi.org/10.5281/zenodo.15335931
 
 - **Zhang, H.** (2023). "Place-Based Privacy: A Humanistic Reflection on Solitude and Anonymity." *Conference on Spatial Knowledge and Information Canada*. https://osf.io/adfxv
 

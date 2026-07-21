@@ -365,14 +365,14 @@ def gen_awards(awards_text):
 
 def gen_books(research):
     """Generate Books section from research.md."""
-    section = extract_section(research, "## Books")
+    section = extract_section(research, "## Book Chapters")
     if not section:
         return ""
     bullets = parse_bullets(section)
     if not bullets:
         return ""
     items = [f"  - {escape_typst(b)}" for b in bullets]
-    return "= Books\n\n#resume-item[\n" + "\n\n".join(items) + "\n]"
+    return "= Book Chapters\n\n#resume-item[\n" + "\n\n".join(items) + "\n]"
 
 
 def gen_publications(research):
