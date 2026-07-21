@@ -28,7 +28,7 @@ A selection of awards and honors recognizing scholarly contributions.
 | 2017 | **Academic Achievement Scholarship**, PSAC Local 610 | 
 | 2017 | **Travel Subsidy**, Western University | 
 | 2017 | **Graduate Research Awards Fund**, Western University | 
-| 2017 | **Student Travel Award**, Spatial Analysis and Modeling Specialty Group | 
+| 2017 | **Student Travel Award**, Spatial Analysis and Modeling Specialty Group, American Association of Geographers | 
 | 2016 | **Best Master's Paper**, Canadian Association of Geographers Ontario Division (CAGONT) | 
 | 2015 | **Western Graduate Research Scholarship**, Western University | 
 | 2015 | **Dean's Honours**, University of Waterloo | 
