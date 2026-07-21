@@ -24,10 +24,18 @@ Dr. Hongyu Zhang is a lecturer in the Department of Earth, Geographic, and Clima
 
 ---
 
-## Appointments
+## Appointment
 
 | Period | Position |
 |--------|----------|
 | 2024-present | Faculty Lecturer, Department of Earth, Geographic, and Climate Sciences, University of Massachusetts Amherst |
 | 2023 | Sessional Lecturer, Department of Geography, Planning and Environment, Concordia University |
 | 2022 | Sessional Lecturer, Department of Geography, McGill University |
+
+---
+
+## Experience
+
+| Period | Position |
+|--------|----------|
+| 2017-2019 | Engineering Support Specialist, Geotab |
