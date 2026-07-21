@@ -9,7 +9,11 @@ keywords:
 
 # Publications
 
-Dr. Zhang's research focuses on data ethics in GIScience and GeoAI. 
+## Research Areas
+
+- Data Ethics
+- GIScience
+- GeoAI
 
 ---
 

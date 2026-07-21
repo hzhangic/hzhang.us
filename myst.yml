@@ -30,7 +30,8 @@ project:
   toc:
     - file: index.md
     - file: pages/about.md
-    - file: pages/research.md
+    - file: pages/publications.md
+    - file: pages/grants.md
     - file: pages/teaching.md
     - file: pages/talks.md
     - file: pages/awards.md
