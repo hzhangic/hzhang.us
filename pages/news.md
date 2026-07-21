@@ -23,7 +23,7 @@ A running log of talks, publications, and milestones, organized by year. The cur
 - **2026-04-30** - Published a journal article titled [Citizen Science and Geoprivacy: Empirical Analysis of Location Masking in Large-Scale Crowdsensing Networks](https://www.tandfonline.com/doi/full/10.1080/00330124.2026.2656680) with Dr. Yue Lin and Qian Fang Yeap in *The Professional Geographer*
 - **2026-04-28** - Awarded the [Mutual Mentoring Grant](https://www.umass.edu/faculty-development/mutual-mentoring/mutual-mentoring-grant-program) from UMass Amherst Office of Faculty Development
 - **2026-04-27** - Elected as an At-Large Board Member of the [Digital Geographies Specialty Group](https://www.aag.org/groups/digital-geographies/), American Association of Geographers (AAG)
-- **2026-04-03** - Published a journal article titled [Polarized geoprivacy attitudes on Chinese social media: Evidence from Weibo](https://www.sciencedirect.com/science/article/pii/S2666378326000152) with Dr. Grant McKenzie in *Digital Geography and Society*
+- **2026-04-03** - Published a journal article titled [Polarized geoprivacy attitudes on Chinese social media: Evidence from Weibo](https://doi.org/10.1016/j.diggeo.2026.100170) with Dr. Grant McKenzie in *Digital Geography and Society*
 - **2026-03-31** - Joined the Program Committee of the Spring [Northeast Arc Users Group (NEARC)](https://www.northeastarc.org/) Conference 
 - **2025-03-17** - Organized paper and panel sessions on GeoAI ethics and the [GIScience for Human Experience and Responsibility (GISER) Symposium](https://gisersym.github.io/) at the [AAG Annual Meeting](https://www.aag.org/events/aag2026/) in San Francisco
 - **2026-02-24** - Joined the Program Committee of the [AAAI ICWSM International Workshop on Cyber Social Threats](https://cy-soc.github.io/2026/) (CySoc 2026)
@@ -34,9 +34,9 @@ A running log of talks, publications, and milestones, organized by year. The cur
 
 - **2025-12-05** - Organized the thematic session *Location Privacy in the Digital Society* at the [Sixth Spatial Data Science Symposium](https://sdss2025.spatial-data-science.net/)
 - **2025-11-19** - Presented at the GIS Day event hosted by McGill University
-- **2025-08-22** - Presented an abstract titled [Vector-Based Super-Resolution Mapping with the PopulationDynamics Foundation Model](https://ica-abs.copernicus.org/articles/10/321/2025/ica-abs-10-321-2025.pdf) in the 32nd International Cartographic Conference in Vancouver, Canada
+- **2025-08-22** - Presented an abstract titled [Vector-Based Super-Resolution Mapping with the PopulationDynamics Foundation Model](https://doi.org/10.5194/ica-abs-10-321-2025) in the 32nd International Cartographic Conference in Vancouver, Canada
 - **2025-06-17** - Joined the Program Committee of the [1st ACM SIGSPATIAL International Workshop on Human-Centered Geospatial Computing](https://geohcc.github.io/) (GeoHCC’25)
-- **2025-05-04** - Presented a poster titled [Evaluating Spatial Dependency in Regional Similarities of the Population Dynamics Foundation Model](https://zenodo.org/records/15335931) in the 28th AGILE Conference on Geographic Information Science in Dresden, Germany
+- **2025-05-04** - Presented a poster titled [Evaluating Spatial Dependency in Regional Similarities of the Population Dynamics Foundation Model](https://doi.org/10.5281/zenodo.15335930) in the 28th AGILE Conference on Geographic Information Science in Dresden, Germany
 - **2025-04-25** - Organized the [Ethical GIS in the Algorithmic Society Workshop](https://hzhangic.github.io/EGAS2025/) in Amherst 
 - **2025-04-14** - Joined the Program Committee of the [AAAI ICWSM International Workshop on Cyber Social Threats](https://cy-soc.github.io/2025/) (CySoc 2025)
 - **2025-04-06** - Received the [Generative AI Nanodegree](https://www.udacity.com/certificate/e/7a93f6f2-b0e8-11ef-aead-930b90f20180) from Udacity 
