@@ -627,7 +627,6 @@ def main():
 
     about = read_file(pages, "about.md")
     research = read_file(pages, "research.md")
-    software = read_file(pages, "software.md")
     teaching = read_file(pages, "teaching.md")
     talks = read_file(pages, "talks.md")
     awards = read_file(pages, "awards.md")
@@ -643,7 +642,6 @@ def main():
         gen_books(research),
         gen_publications(research),
         gen_grants(research),
-        gen_software(software),
         gen_teaching(teaching),
         gen_mentoring(teaching),
         gen_workshops(talks),
