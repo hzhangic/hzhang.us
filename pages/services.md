@@ -16,7 +16,7 @@ Dr. Zhang serves the academic community through editorial roles, manuscript revi
 
 | Period        | Role                        |
 | ------------- | --------------------------- |
-| 2024-present | Curriculum Committee Member |
+| 2024-present | Curriculum Committee Member, Department of Earth, Geographic, and Climate Sciences, UMass Amherst |
 
 ---
 
@@ -60,12 +60,12 @@ Dr. Zhang serves the academic community through editorial roles, manuscript revi
 | Year        | Conference                    |
 | ----------- | ----------------------------- |
 | 2026 | Spring [Northeast Arc Users Group (NEARC)](https://www.northeastarc.org/) Conference, Amherst, MA |
-| 2026 | AAAI ICWSM [International Workshop on Cyber Social Threats](https://cy-soc.github.io/2026/), Los Angeles, CA |
-| 2025 | [The Sixth Spatial Data Science Symposium](https://sdss2025.spatial-data-science.net/), Online |
-| 2025 | ACM SIGSPATIAL [Workshop on Human-Centered Geospatial Computing](https://geohcc.github.io/), Minneapolis, MN |
-| 2025 | AAAI ICWSM [International Workshop on Cyber Social Threats](https://cy-soc.github.io/2025/), Copenhagen, Denmark |
-| 2024 | ACM SIGSPATIAL [Workshop on Location-based Recommendations, Geosocial Networks and Geoadvertising](http://localrec.github.io/2024/), Atlanta, GA |
-| 2024 | [The Fifth Spatial Data Science Symposium](https://sdss2024.spatial-data-science.net/), Online |
+| 2026 | AAAI ICWSM [International Workshop on Cyber Social Threats (CySoc'26)](https://cy-soc.github.io/2026/), Los Angeles, CA |
+| 2025 | [The Sixth Spatial Data Science Symposium (SDSS 2025)](https://sdss2025.spatial-data-science.net/), Online |
+| 2025 | ACM SIGSPATIAL [Workshop on Human-Centered Geospatial Computing (GeoHCC'25)](https://geohcc.github.io/), Minneapolis, MN |
+| 2025 | AAAI ICWSM [International Workshop on Cyber Social Threats (CySoc'25)](https://cy-soc.github.io/2025/), Copenhagen, Denmark |
+| 2024 | ACM SIGSPATIAL [Workshop on Location-based Recommendations, Geosocial Networks and Geoadvertising (LocalRec'24)](http://localrec.github.io/2024/), Atlanta, GA |
+| 2024 | [The Fifth Spatial Data Science Symposium (SDSS 2024)](https://sdss2024.spatial-data-science.net/), Online |
 
 ---
 
@@ -78,7 +78,7 @@ Dr. Zhang serves the academic community through editorial roles, manuscript revi
 | 2026 | *Humanities and Social Sciences Communications* | Springer Nature|
 | 2025 | *Urban Informatics* | Springer Nature |
 | 2025 | *Scientific Reports* | Nature |
-| 2025 | *International Conference on Geographic Information Science (GIScience)* | — |
+| 2025 | *International Conference on Geographic Information Science (GIScience'25)* | — |
 | 2024 | *Scientific Data* | Nature |
 | 2024 | *International Journal of Geographical Information Science* | Taylor & Francis |
 | 2023 | *Transactions in GIS* | Wiley |
@@ -86,7 +86,7 @@ Dr. Zhang serves the academic community through editorial roles, manuscript revi
 | 2023 | *Area* | Wiley |
 | 2023 | *Digital Society* |Springer Nature |
 | 2019 | *Big Earth Data* | Taylor & Francis |
-| 2018 | *International Symposium on Open Collaboration (OpenSym)* | ACM |
+| 2018 | *International Symposium on Open Collaboration (OpenSym'18)* | ACM |
 
 ---
 
