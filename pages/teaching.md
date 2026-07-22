@@ -11,7 +11,7 @@ keywords:
 
 Dr. Zhang teaches courses in geographic information science and technology. 
 
-## Courses at the University of Massachusetts Amherst
+## Courses at UMass Amherst
 
 | Course | Title | Semesters |
 |--------|-------|-----------|
@@ -21,7 +21,7 @@ Dr. Zhang teaches courses in geographic information science and technology.
 | GEOGRAPH 585 | Introduction to GIS | Summer 2025 |
 | GEOGRAPH 592B | GIS Seminar | Spring 2026 |
 | NRC 440/ECO 640 | Python for ArcGIS | Spring 2027, Spring 2026, Spring 2025 |
-| NRC 588 | Web GIS | Spring 2027, Spring 2026, Spring 2025 |
+| NRC 588/GEOGRAPH 588 | Web GIS | Spring 2027, Spring 2026, Spring 2025 |
 | GEOGRAPH 482/682 | GIS Programming | Fall 2026, Fall 2025, Fall 2024 |
 | GEOGRAPH 452/652 | Cartography and Geovisualization | Fall 2026, Fall 2025, Fall 2024 |
 
