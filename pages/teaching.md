@@ -9,33 +9,37 @@ keywords:
 
 # Teaching
 
-Dr. Doe teaches courses in computer science and data science at Example University.
+Dr. Zhang teaches courses in geographic information science and technology. 
 
-## Self-Paced Online Courses
-
-| Course | Title | Website |
-|--------|-------|---------|
-| CS 101 | Introduction to Programming | [Website](https://example.com/cs101) |
-| DS 201 | Data Science Fundamentals | [Website](https://example.com/ds201) |
-
----
-
-## Courses at Example University
+## Courses at the University of Massachusetts Amherst
 
 | Course | Title | Semesters |
 |--------|-------|-----------|
-| CS 301 | Machine Learning | Fall 2023, Fall 2024, Fall 2025 |
-| CS 401 | Deep Learning | Spring 2024, Spring 2025 |
-| DS 501 | Advanced Data Science | Fall 2024 |
+| GEOGRAPH 590A | Advanced Geographic Information Science | Spring 2027 |
+| ECO 637 | Spatial Data Analysis in R | Fall 2026 |
+| GEOGRAPH 696 | Independent Study | Fall 2026 |
+| GEOGRAPH 585 | Introduction to GIS | Summer 2025 |
+| GEOGRAPH 592B | GIS Seminar | Spring 2026 |
+| NRC 440/ECO 640 | Python for ArcGIS | Spring 2027, Spring 2026, Spring 2025 |
+| NRC 588 | Web GIS | Spring 2027, Spring 2026, Spring 2025 |
+| GEOGRAPH 482/682 | GIS Programming | Fall 2026, Fall 2025, Fall 2024 |
+| GEOGRAPH 452/652 | Cartography and Geovisualization | Fall 2026, Fall 2025, Fall 2024 |
 
 ---
 
-## Courses at Previous University
+## Courses at Concordia University
 
 | Course | Title | Semesters |
 |--------|-------|-----------|
-| CS 110 | Programming Fundamentals | Fall 2020, Spring 2021 |
-| CS 210 | Data Structures | Fall 2021, Spring 2022 |
+| GEOG 264 | Programming for Environmental Sciences (with R) | Fall 2023 |
+
+---
+
+## Courses at McGill University
+
+| Course | Title | Semesters |
+|--------|-------|-----------|
+| GEOG 202 | Statistics and Spatial Analysis | Fall 2022 |
 
 ---
 
@@ -45,17 +49,6 @@ Dr. Doe teaches courses in computer science and data science at Example Universi
 
 | Name | Program | Topic |
 |------|---------|-------|
-| Alice Smith | Ph.D. | Machine learning for scientific discovery |
-| Bob Johnson | M.S. | Cloud computing optimization |
-
-### Past Students
-
-:::{dropdown} Graduated
-:open:
-
-| Name | Program | Topic | Year |
-|------|---------|-------|------|
-| Carol Williams | M.S. | Natural language processing | 2025 |
-| David Brown | M.S. | Computer vision applications | 2024 |
+| Weijia Wang | M.S. | Ethical GeoAI |
 
 :::
