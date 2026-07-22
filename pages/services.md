@@ -10,7 +10,7 @@ keywords:
 
 # Services
 
-Dr. Zhang serves the academic community through editorial roles, manuscript review, and conference organization.
+Dr. Zhang contributes to the academic community through editorial service, peer review, professional society leadership, and the organization of conferences, workshops, and scholarly events.
 
 ## Departmental Service
 
