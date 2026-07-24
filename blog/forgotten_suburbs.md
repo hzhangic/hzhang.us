@@ -1,91 +1,32 @@
 ---
-title: "A Reusable Template for Building Websites with MyST Markdown"
-date: 2026-04-07
+title: "The Forgotten Suburbs: How Quantitative Micromobility Research Failed to Consider Transportation Equity"
+date: 2025-08-28
 authors:
-  - name: Qiusheng Wu
-    email: qwu18@utk.edu
-    orcid: 0000-0001-5437-4073
-    url: https://gishub.org
-description: A GitHub template that bundles MyST Markdown, GitHub Pages deployment, Netlify PR previews, and pre-commit hooks into a ready-to-use starting point.
-thumbnail: https://img.youtube.com/vi/wj0kAthmusA/maxresdefault.jpg
+  - name: Hongyu Zhang
+description: An opinion article explaining the potential bias in micromobility research.
+thumbnail: images/bike_lane.png
 tags:
-  - MyST Markdown
-  - GitHub Template
-  - GitHub Actions
-  - Pre-commit
+  - micromobility
+  - bike lanes
+  - Montreal
+  - public policy
+  - urban planning
 keywords:
-  - MyST Markdown
-  - GitHub Template
-  - GitHub Actions
-  - Pre-commit
+  - micromobility
+  - bike lanes
+  - Montreal
+  - public policy
+  - urban planning
 ---
 
-# A Reusable Template for Building Websites with MyST Markdown
+[**A recent study**](https://www.sciencedirect.com/science/article/pii/S2950105925000154) by a group of McGill researchers concluded that doubling Montreal's cycling infrastructure would have minimal impact on drivers. Their reasoning is simple: bike lanes take up far less space than automobile lanes. Yet this research has important blind spots. It overlooks drivers' concerns and fails to address broader criticisms of [**the city's growing fixation on bike lanes**](https://www.mtlblog.com/montreal/montreal-will-get-200-km-more-bike-lanes-10-highway-bike-routes-under-mayor-plantes-new-plan).
 
-After rebuilding my [personal website](https://gishub.org) with [MyST Markdown](https://mystmd.org), I found myself wanting to share the setup with others. The configuration work -- GitHub Actions, pre-commit hooks, directory structure, deployment pipelines -- took real effort to get right. To make it easier for anyone to start from a working foundation, I created [myst-website-template](https://github.com/opengeos/myst-website-template), a GitHub template repository that bundles everything into a single click.
+Skeptics have long raised several points against the relentless expansion of cycling infrastructure. First, Montreal is a winter city. For nearly half the year, bike lanes see limited use, while automobile lanes remain indispensable. Second, Montreal is already recognized as [**one of the most cycling-friendly cities in Canada**](https://www.peopleforbikes.org/news/five-great-canadian-bike-cities). The system is strong: why not prioritize road repairs that save drivers from the costs of pothole damage instead? Third, [**the constant comparisons to European cities**](https://www.montrealgazette.com/opinion/article1111017.html)  miss the point. North America is fundamentally car-centric, and infrastructure in a single city cannot overturn that reality when people travel across municipal boundaries. Finally, new bike lanes often come at the expense of accessibility. In areas like NDG, [**barriers created by cycling corridors**](https://www.ctvnews.ca/montreal/article/renewed-calls-to-remove-terrebonne-bike-path-in-ndg-amid-parking-and-traffic-concerns/)  make it harder to reach churches or small businesses, a pattern that could easily repeat elsewhere.
 
-## Why a Template?
+The McGill study's conclusion that "the cars are going to be alright" rests on shaky ground. Researchers emphasize the spatial efficiency of bike lanes, but parking, not road space, is the real pain point, especially downtown. Residents from outside the core often avoid visiting because of limited parking, and BIXI stations in the summer remove even more spots. Ironically, BIXI itself is scarce or non-existent in many Montreal suburbs. The city's downtown businesses bear the cost of this cyclist-first ideology. On top of that, many Montreal streets are already narrow, leaving drivers squeezed into smaller cars even before more bike lanes are added.
 
-Starting a MyST site from scratch is straightforward if all you need is a single page. But a production-ready site involves more than content:
+A second flaw in the study is its limited geographic scope. The researchers analyzed only traffic within the city of Montreal, ignoring the broader metropolitan region. The North and South Shores, including [**ARTM zones**](https://www.artm.quebec/en/fare-zones/)  C and D, were excluded. Suburban residents also need access to the island for work, leisure, and essential services. To double bike lanes without considering them raises a transportation equity issue: who actually benefits? The study measured trips passing through boroughs but neglected origins and destinations. Given the limited range of bicycles, many of these trips are likely short-distance. For suburban residents, however, expanded bike lanes can create barriers, especially where public transit is sparse.
 
-- A GitHub Actions workflow that builds and deploys on every push.
-- A second workflow that generates preview builds for pull requests.
-- Pre-commit hooks that catch formatting issues, typos, and bloated notebook metadata before they reach the repository.
-- A sensible directory layout that scales as pages are added.
-- Community files like a license, code of conduct, and contributing guide.
+The lead researcher argues that [**Montreal simply does not have enough bike lanes**](https://www.ctvnews.ca/montreal/article/montreal-should-double-its-number-of-bike-paths-study/). But enough for whom? This is precisely why quantitative models fall short: they leave out the human dimension of transportation, and we must bring people back to the conversation. The city's cycling infrastructure is already world-class. Yet the city's priorities reveal a bias: during winter, bike lanes are often cleared of snow before sidewalks, a fact so absurd my friend and I can only laugh. Who benefits more from cleared paths in January: the handful of cyclists braving the cold, or the thousands of pedestrians?
 
-Setting all of this up by hand takes time and introduces opportunities for small mistakes. The template packages these pieces together so that a new project starts with a complete, tested setup rather than an empty directory.
-
-## What Is Included
-
-- **MyST Markdown with Jupyter integration** -- Write content in Markdown or Jupyter notebooks. MyST renders both into a polished HTML site with support for directives, roles, cross-references, and executable code cells.
-- **Book theme** -- The built-in [book theme](https://mystmd.org/guide/website-templates) provides a sidebar, table of contents, and search out of the box. No custom templates needed.
-- **Organized content structure** -- Pages live in a `book/` directory organized into logical parts (`part01/`, `part02/`, etc.), making it easy to group related content.
-- **BibTeX bibliography support** -- Add references to `book/references.bib` and cite them directly in your Markdown files.
-- **Jupytext** -- Round-trip conversion between `.ipynb` and `.md` formats, so notebooks can be version-controlled as plain text.
-- **GitHub Pages deployment** -- The `deploy.yml` workflow builds the HTML site and publishes it to GitHub Pages on every push to `main`.
-- **Netlify PR previews** -- The `build.yml` workflow builds a preview for every pull request, making it easy to review changes before merging.
-- **Pre-commit hooks** -- [Black](https://github.com/psf/black) for Python and Jupyter formatting, [codespell](https://github.com/codespell-project/codespell) for typo detection, [nbstripout](https://github.com/kynan/nbstripout) for cleaning notebook metadata, plus standard checks for YAML, TOML, trailing whitespace, and large files.
-- **Dependabot** -- Weekly dependency update checks for Python packages, GitHub Actions, and Docker images.
-- **Community defaults** -- MIT license, Contributor Covenant code of conduct, and a contributing guide are included from the start.
-
-## Getting Started
-
-1. Go to the [template repository](https://github.com/opengeos/myst-website-template) and click **Use this template** to create a new repository.
-2. Open `myst.yml` and update the project title, author name, GitHub URL, and table of contents to match your content.
-3. Replace the placeholder pages in the `book/` directory with your own Markdown files or Jupyter notebooks.
-4. Push to `main`. GitHub Actions will build the site and deploy it to GitHub Pages automatically.
-
-That is all it takes. PR previews will also work once you connect Netlify and add the `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` secrets to your repository.
-
-## Customization
-
-The template is designed to be modified. A few common adjustments:
-
-- **Site metadata**: Edit the `project` section in `myst.yml` to set your title, authors, copyright year, and GitHub link.
-- **Table of contents**: Add or remove entries in `project.toc` to control the sidebar navigation. Pages can be grouped under titled sections with `children` lists.
-- **Custom domain**: Add a `CNAME` file with your domain name and remove the `BASE_URL` environment variable from `deploy.yml`.
-- **Styling**: Uncomment the `style: custom.css` line in `myst.yml` and add your own CSS overrides.
-- **Analytics**: Uncomment and fill in `analytics_google` in the site options to enable Google Analytics.
-
-To build locally, install the dependencies and run:
-
-```bash
-pip install -r requirements.txt
-npm install -g mystmd
-myst build --html
-```
-
-The output will be in `_build/html/`.
-
-To start running the website locally, run:
-```bash
-myst start
-```
-
-## Lessons Learned
-
-- **Templates lower the barrier to entry.** Most of the setup work is invisible once it is done. Packaging it into a template means new projects start with a working deployment pipeline instead of spending their first hours on configuration.
-- **Pre-commit hooks prevent common mistakes.** Catching formatting issues, typos, and bloated notebook metadata before they reach the repository keeps the commit history clean and reduces noise in code reviews.
-- **Separating production from preview keeps feedback fast.** Having one workflow for GitHub Pages and another for Netlify PR previews means contributors can see their changes without affecting the live site.
-- **Open-source defaults matter.** Including a license, code of conduct, and contributing guide from day one makes a repository welcoming to contributors without requiring extra effort later.
+The truth is that car demand persists, and it will not be solved by adding bike lanes. If the city truly wants to reduce congestion and emissions, it must invest in robust mass transit: subways, light rail, buses, or even intercity high-speed trains. Give people real alternatives, and they will leave their cars at home. Doubling down on bike lanes while sidelining the needs of suburban residents is not equity -- it is obsession.

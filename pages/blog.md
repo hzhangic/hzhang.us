@@ -35,7 +35,7 @@ August 28, 2025
 December 21, 2023
 :::
 
-:::{card} Why a PhD fast-track can be a bad idea
+:::{card} Why a PhD Fast-Track Can Be a Bad Idea
 :link: /blog/phd_fast_track
 :header: ![fast track](images/fast_track.jpg)
 October 12, 2022

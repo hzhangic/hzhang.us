@@ -1,279 +1,40 @@
 ---
-title: "Write Journal Articles with MyST Markdown: Auto-Generate PDFs and Websites"
-date: 2026-04-15
+title: "H-1B Turmoil in the U.S.: Opportunity or Illusion for Canada?"
+date: 2025-09-22
 authors:
-  - name: Qiusheng Wu
-    email: qwu18@utk.edu
-    orcid: 0000-0001-5437-4073
-    url: https://gishub.org
-description: A step-by-step tutorial on writing journal articles in MyST Markdown with automatic PDF generation and website deployment using a GitHub template.
-thumbnail: https://img.youtube.com/vi/iwL-s7aPNYQ/maxresdefault.jpg
+  - name: Hongyu Zhang
+description: An opinion article about the Canadian immigration policy. 
+thumbnail: images/Canadian_flag.png
 tags:
-  - MyST Markdown
-  - GitHub Pages
-  - Tutorial
-  - PDF
-  - Academic Writing
+  - h1b
+  - Canada 
+  - United States
+  - immigration
+  - visa
 keywords:
-  - MyST Markdown
-  - GitHub Pages
-  - Tutorial
-  - PDF
-  - Academic Writing
-  - Journal Articles
-  - Jupytext
+  - h1b
+  - Canada 
+  - United States
+  - immigration
+  - visa
 ---
 
-# Write Journal Articles with MyST Markdown: Auto-Generate PDFs and Websites
+Last Friday was supposed to be an ordinary start to the weekend for many, but that quickly changed for foreign workers in the United States. After office hours, their social media feeds erupted with news about  [a new H-1B proclamation](https://www.nbcnews.com/politics/trump-administration/trump-raises-fee-h-1b-visas-100000-rcna232525)  from the current administration. Shock rippled through the community as people realized the proposed $100,000 application fee would put many visa holders' immigration status in jeopardy.
 
-Writing journal articles usually means choosing between tools that are easy to use and tools that produce professional output. Google Docs and Microsoft Word are simple but give you limited control over formatting and make collaboration through version control difficult. LaTeX produces beautiful PDFs but has a steep learning curve. What if you could write in plain Markdown, push to GitHub, and get both a publication-quality PDF and an interactive website generated automatically? That is exactly what the [myst-article-template](https://github.com/opengeos/myst-article-template) provides.
+Tech companies responded rapidly,  [urging employees to remain in the U.S. or return before September 21 at midnight](https://techcrunch.com/2025/09/21/amazon-google-microsoft-warn-h-1b-employees-to-stay-in-the-us/), the proclamation's effective date. Some foreign workers, already on international flights, made  [frantic last-minute decisions to cancel trips](https://thefederal.com/category/news/trump-h1b-visa-fee-hike-panic-airfares-207707), even after planes had left the gate, causing significant delays at airports.
 
-In this tutorial, I walk through the entire workflow step by step: creating a repository from the template, editing your article content, managing citations, adding figures and tables, including executable code blocks, generating a PDF, and deploying everything as a website. The whole process takes just a few minutes to set up.
+The lack of policy details and no mention of exemptions for specific roles or industries left all H-1B holders deeply concerned. As with many other policies from this administration, changes come abruptly and unpredictably. On Saturday, the White House provided clarification via social media:  [the new fee would not apply to existing H-1B holders.](https://www.axios.com/2025/09/20/trump-h-1b-immigration-visas)  This announcement offered tremendous relief - after all, life does not pause for emergencies that require travel home.
 
-:::{iframe} https://www.youtube.com/embed/iwL-s7aPNYQ
-:width: 100%
-Video tutorial: Write Journal Articles with MyST Markdown
-:::
+At the same time, some Canadians began calling on their government to seize this opportunity and attract affected talent by welcoming those disillusioned by the change in the United States (for example, see  [this tweet](https://x.com/thomasjuneau/status/1969194511352963229)  from Public and International Affairs Professor Thomas Juneau). But is this truly a smart move?
 
-## What You Will Need
+According to  [SSTI](https://ssti.org/blog/useful-stats-look-h-1b-visa-program-industry-employer-and-state), most H-1B holders (about half in 2023) worked in professional, scientific, and technical services - in other words, at large tech companies. In 2023, educational services were next (about 16%), followed by healthcare and social assistance, and then manufacturing (at 7-8% each). The  [top 100 H-1B employers](https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub)  as of June 2025 included Amazon, TATA, Microsoft, Meta, Apple, and Google. If Canada opened its doors now, the program would likely attract mostly tech workers.
 
-- A [GitHub](https://github.com) account (free).
-- For local editing and preview: a code editor like [VS Code](https://code.visualstudio.com) or [Cursor](https://cursor.com), [Node.js](https://nodejs.org) (version 18 or later), and Python 3.
-- For local PDF compilation: the [Typst](https://typst.app) CLI (optional, since GitHub Actions handles this automatically).
+However, Canada's tech sector is already oversaturated. According to  [the Globe and Mail](https://www.theglobeandmail.com/business/technology/science/article-canadas-tech-job-postings-fell-nearly-20-per-cent-from-early-2020/), tech job postings have fallen nearly 20 percent from early 2020 levels.  [Unemployment in the country remains high](https://www150.statcan.gc.ca/n1/daily-quotidien/250905/dq250905a-eng.htm), 7.1% in August 2025, the highest since May 2016, excluding the pandemic years. Entry-level jobs are snapped up quickly, with thousands of applicants flooding HR systems.  [A recent survey](https://www.robert-walters.ca/insights/news/blog/job-application-overload.html)  found that 87% of Canadian job seekers feel their applications are ignored, a symptom of extreme competition and strict filtering during application screening.
 
-## What the Template Produces
+The next-largest group of H-1B holders work in education, a sector equally troubled in Canada. Many universities and colleges are cutting budgets due to a drop in international student enrollment. Quebec, for example, has imposed  [as many as 15 restrictive measures on foreign students](https://www.montrealgazette.com/news/provincial-news/article778641.html), and  [new student caps](https://www.cbc.ca/news/canada/montreal/quebec-international-students-enrolment-caps-1.7468754)  were introduced. Applications at some institutions are  [down by 25 to 60 percent](https://www.montrealgazette.com/news/provincial-news/article778641.html), and federal immigration caps have  [further reduced study permit allocations](https://www.canada.ca/en/immigration-refugees-citizenship/news/2024/09/strengthening-temporary-residence-programs-for-sustainable-volumes.html). The financial impact is dramatic:  [McGill has announced 100 layoffs to address a $45-million deficit](https://www.montrealgazette.com/news/article826270.html),  [SFU's president predicts more layoffs](https://www.cbc.ca/player/play/video/9.6801882), and Ontario universities, including Waterloo, Wilfrid Laurier, and Guelph,  [face significant deficits](https://www.ctvnews.ca/kitchener/article/ontario-universities-face-financial-crisis-as-deficits-mount/), with Waterloo alone reporting a $75-million shortfall before recent cuts.  [Dalhousie University in Nova Scotia also posted a $20-million deficit, leading to across-the-board cuts](https://www.cbc.ca/news/canada/nova-scotia/dalhousie-university-facing-20-million-deficit-across-the-board-cuts-1.7571252). This budgetary crisis means hiring freezes are likely to expand.
 
-Before diving into the setup, here is what you get out of the box:
+Given this landscape, it makes little sense for Canada to rush to "capitalize" on the H-1B crisis next door. Examining the two largest H-1B sectors, tech and education, reveals Canada simply does not offer sufficient job opportunities to support a surge in skilled newcomers. The outcome for many would be lower wages and working below their qualifications if they landed a job at all. The focus must instead be on job creation for everyone, not just opening the floodgates for more arrivals.
 
-- **A publication-ready PDF** with title, authors, affiliations, section headings, figures, tables, code blocks, and a full reference list. You can view a [sample PDF](https://opengeos.org/myst-article-template/article.pdf) to see the output quality.
-- **An interactive website** deployed to GitHub Pages with hover-to-preview citations, clickable cross-references, and expandable code blocks. See the [demo website](https://opengeos.org/myst-article-template) for a live example.
+Canada already experimented with this idea in 2023 when it launched  [a special work permit program for H-1B visa holders](https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/h1b.html). Demand was intense:  [the 10,000 permit cap was reached in less than 48 hours](https://www.forbes.com/sites/stuartanderson/2023/07/19/h-1b-visa-holder-applications-overwhelm-canadas-new-program/). Yet within a year,  [only 1,205 workers actually arrived](https://www.niskanencenter.org/a-year-in-canadas-new-visa-recruits-just-1200-u-s-h-1b-holders/). While interest is high, the reality of Canada's job market makes the move far less attractive. The goal of attracting top talent was not completely met.
 
-The PDF and the website are both generated from the same Markdown source. You write once and get both outputs automatically whenever you push changes to GitHub.
-
-## Create Your Repository from the Template
-
-1. Go to the [myst-article-template](https://github.com/opengeos/myst-article-template) repository on GitHub.
-2. Click the green **Use this template** button in the upper right corner, then select **Create a new repository**.
-3. Choose your GitHub account as the owner and give the repository a name, for example `my-article`.
-4. Optionally add a description like "Repository for my journal article."
-5. Click **Create repository** and wait a few seconds for GitHub to copy the template.
-
-## Enable GitHub Pages
-
-The first deployment will fail because GitHub Pages is not enabled by default. To fix that:
-
-1. Go to your new repository's **Settings** tab.
-2. In the left sidebar, click **Pages**.
-3. Under **Build and deployment**, change the source to **GitHub Actions**.
-4. Go back to the **Actions** tab. Click into the failed workflow run, then click **Re-run failed jobs** to trigger a fresh build.
-5. After a minute or two, your site will be live at `https://username.github.io/repo-name`.
-
-To make the URL easy to find, go to the repository's **About** section (gear icon on the main page), check **Use your GitHub Pages website**, and save.
-
-## What GitHub Actions Does for You
-
-Every time you push changes to the repository, the GitHub Actions workflow automatically:
-
-1. Builds the HTML website with `myst build --html`.
-2. Generates the article PDF.
-3. Deploys everything to GitHub Pages.
-
-The PDF is always available at a stable URL: `https://username.github.io/repo-name/article.pdf`. You can share this link directly, and it will always point to the latest version of your article.
-
-## Clone and Edit Locally
-
-Clone the repository to your local machine and open it in your editor:
-
-```bash
-git clone https://github.com/username/repo-name.git
-cd repo-name
-```
-
-Install the Python dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Start the local development server to preview your article:
-
-```bash
-myst start
-```
-
-This launches a preview at `http://localhost:3000` (or a similar port). Changes to your Markdown files are reflected in the browser automatically. For a side-by-side editing experience, split your editor window and open the preview URL in the built-in browser panel. Every time you save a file, the preview updates instantly.
-
-## Update Article Metadata
-
-The article content lives primarily in `article.md`. Open this file and update the frontmatter at the top:
-
-- **Title**: Update the article title. Note that the title is also referenced in `myst.yml`, so update it in both places to keep the PDF and website consistent.
-- **Authors**: Replace the template author names with your own. Each author entry supports `name`, `email`, `affiliations`, and other fields.
-- **Affiliations**: Update department, institution, city, and country.
-- **Subtitle**: If your article has a subtitle, you can add it in `myst.yml` under the project configuration.
-
-The author and affiliation information appears in the PDF header. The website pulls its metadata from the same source, so you only need to update it once.
-
-## Manage Citations
-
-MyST Markdown makes citation management straightforward. All references are stored in a `references.bib` file using standard BibTeX format.
-
-### Add a New Reference
-
-1. Find the article you want to cite on [Google Scholar](https://scholar.google.com) or your preferred source.
-2. Click the **Cite** button, then select **BibTeX** to get the formatted entry.
-3. Copy the BibTeX entry and paste it into `references.bib`.
-4. Optionally add a `doi` field if one is available. Make sure each entry has a unique citation key (the identifier after `@article{`).
-
-### Cite in Your Article
-
-MyST supports two citation styles:
-
-- **Parenthetical citation**: `[@article-id]` renders as (Author, Year).
-- **Narrative citation**: `@article-id` renders as Author (Year).
-
-On the website, citations are interactive. Hovering over a citation shows the full reference in a tooltip, and clicking it scrolls to the reference list. In the PDF, citations are hyperlinked to the bibliography section.
-
-### Add a DOI
-
-To include a DOI in your reference, add a `doi` field to the BibTeX entry in `references.bib`:
-
-```bibtex
-@article{wu2020geemap,
-  title={geemap: A Python package for interactive mapping with Google Earth Engine},
-  author={Wu, Qiusheng},
-  journal={Journal of Open Source Software},
-  year={2020},
-  doi={10.21105/joss.02305}
-}
-```
-
-Make sure to include only the DOI identifier (e.g., `10.21105/joss.02305`), not the full URL. Also ensure there is a comma after every field in the BibTeX entry, as a missing comma will cause a build error.
-
-## Add Figures, Tables, and Code
-
-### Tables
-
-You can create tables using standard Markdown table syntax. The template also supports the three-line table format commonly used in academic publishing:
-
-```markdown
-:::{table} Overview of Methods
-:label: tbl-methods
-
-| Method | Accuracy | Speed |
-|--------|----------|-------|
-| Method A | 95.2% | Fast |
-| Method B | 97.1% | Moderate |
-| Method C | 93.8% | Fast |
-:::
-```
-
-Tables are automatically numbered. To reference a table elsewhere in your article, use `` {numref}`tbl-methods` ``, which renders as "Table 1" (or whatever the sequential number is). You never need to manually track table numbers.
-
-### Figures
-
-Figures work similarly. Add an image with a label and caption:
-
-```markdown
-:::{figure} ./images/study-area.png
-:label: fig-study-area
-:alt: Map of the study area
-
-Map showing the study area boundary and sample locations.
-:::
-```
-
-Reference figures with `` {numref}`fig-study-area` `` to get automatic numbering. On the website, hovering over a figure reference shows a preview of the figure in a tooltip, which is especially useful when the figure is on a different page or section of a long article.
-
-### Code Blocks
-
-One of the most powerful features of MyST Markdown is support for executable code blocks. You can include source code that readers can view, and on the website, interact with:
-
-````markdown
-```{code-block} python
-import geoai
-
-m = geoai.Map()
-m
-```
-````
-
-Code blocks appear in both the PDF and the website. On the website, they are syntax-highlighted and can be expanded or collapsed. This is particularly valuable for research articles that include data analysis or visualization code, making your work fully reproducible.
-
-## Generate the PDF Locally
-
-You do not need to generate the PDF locally since GitHub Actions handles it on every push. But if you want to preview the PDF before pushing:
-
-```bash
-python build_pdf.py
-```
-
-This runs the build script and produces `article.pdf` in the project root. Open it to verify that your title, authors, affiliations, citations, figures, tables, and code blocks all render correctly.
-
-## Convert Between Markdown and Jupyter Notebooks
-
-If your article contains executable code, you may want to run it interactively in a Jupyter notebook. The template supports [Jupytext](https://jupytext.readthedocs.io), which converts between MyST Markdown and Jupyter notebook formats.
-
-### Markdown to Notebook
-
-Convert your article to a Jupyter notebook:
-
-```bash
-jupytext --to ipynb article.md
-```
-
-This creates `article.ipynb` with all your code cells ready to execute. Open it in Jupyter or VS Code, select a kernel, and run the cells to verify your code produces the expected output.
-
-### Notebook to Markdown
-
-After editing or running code in the notebook, sync changes back to Markdown:
-
-```bash
-jupytext --to myst article.ipynb
-```
-
-One thing to keep in mind: converting back to MyST Markdown can sometimes simplify the frontmatter. Use version control (`git diff`) to review the changes and make sure no metadata was lost. It is a good practice to commit your Markdown changes before converting to a notebook, so you can always restore the original frontmatter if needed.
-
-## Deploy and Verify
-
-Once you are happy with your changes, commit and push to GitHub. For small updates, you can push directly to the `main` branch:
-
-```bash
-git add .
-git commit -m "Update article content"
-git push
-```
-
-For larger changes, create a feature branch and open a pull request:
-
-```bash
-git checkout -b update-article
-git add .
-git commit -m "Update article content"
-git push -u origin update-article
-```
-
-Then create a pull request on GitHub. The template includes pre-commit hooks that catch common issues like typos, trailing whitespace, and formatting problems. Once the pull request checks pass, merge it into `main` and the updated website and PDF will be deployed automatically.
-
-After deployment, verify both outputs:
-
-- **Website**: Visit `https://username.github.io/repo-name` and check that your content, citations, figures, and tables render correctly.
-- **PDF**: Navigate to `https://username.github.io/repo-name/article.pdf` and confirm the layout, references, and formatting.
-
-## Why This Approach Works
-
-Because everything is stored as plain text Markdown in a GitHub repository, you get several advantages over traditional document editors:
-
-- **Version control**: Every change is tracked. You can always go back to a previous version if something goes wrong, which is far more reliable than the revision history in Google Docs or keeping multiple copies of a Word document.
-- **Collaboration**: Multiple authors can work on the same article using branches and pull requests, with clear diffs showing exactly what changed.
-- **Reproducibility**: Executable code blocks mean readers (and reviewers) can verify your analysis directly from the article.
-- **Accessibility**: The web version of your article is publicly accessible without requiring readers to download attachments.
-- **Focus on content**: You write in Markdown and let the tooling handle layout, numbering, citation formatting, and PDF compilation.
-
-## What is Next
-
-This tutorial covers the complete workflow from template to deployed article with automatic PDF generation. If you are interested in building a personal academic website using the same technology stack, check out [Build a Personal Website in 5 Minutes: No Coding Required](./build-personal-website). For a website that also includes automatic CV generation, see [Build a Professional CV Website with Auto PDF Generation Using MyST Markdown](./myst-cv-website).
-
-The [MyST Markdown guide](https://mystmd.org/guide) is the best reference for all available directives and components. For customizing the PDF output, the [Typst documentation](https://typst.app/docs) covers layout and typography options.
-
-If you use this template for your next article, feel free to share it on social media. I would love to see what you publish!
+Canada, on the other hand, should continue to bring immigrants who fill persistent job vacancies, especially in manufacturing, healthcare, construction, retail trade, and accommodation and food services, according to  [Statistics Canada](https://www.statcan.gc.ca/en/subjects-start/labour_/labour-shortage-trends-canada). Attracting H-1B holders from the U.S. may sound promising, but the data, and recent experience, show it's not the ideal path.
