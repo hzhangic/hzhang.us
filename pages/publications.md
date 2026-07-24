@@ -77,11 +77,18 @@ keywords:
 
 ## Non-refereed Publications
 
+### Letters to the Editor 
 - **Zhang, H.** (2023). "Reimagining GIScience Education for Enhanced Employability." *Journal of Spatial Information Science*. https://doi.org/10.5311/JOSIS.2023.27.307
+
+### Reports
 
 - **Zhang, H.**, McKenzie, G., Tomko, M., Egorova, E., Kim, J. (2022). "Report From the First Workshop on Cyber Ethics in Platial Research." *Proceedings of the 3rd International Symposium on Platial Information Science (PLATIAL)*. https://doi.org/10.5281/zenodo.6413003
 
+### News Articles
+
 - **Zhang, H.** (2020). "With Coronavirus Containment Efforts, What Are the Privacy Rights of Patients?" *The Conversation*. https://theconversation.com/with-coronavirus-containment-effortswhat-are-the-privacy-rights-of-patients-131752
+
+### Book Reviews
 
 - **Zhang, H.** (2019). "Using Geodata & Geolocation in the Social Sciences: Mapping Our Connected World by David Abernathy, Sage Publishing, London, 2017, 327 pp., paper US$50.00 (ISBN 978-1473908185)." *The Canadian Geographer*. https://doi.org/10.1111/cag.12532
 
