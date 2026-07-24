@@ -1,5 +1,5 @@
 ---
-title: "Reimagining GIScience Education"
+title: "Reimagining GIScience Education for Enhanced Employability"
 date: 2023-12-21
 authors:
   - name: Hongyu Zhang

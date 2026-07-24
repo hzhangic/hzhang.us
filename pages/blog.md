@@ -41,7 +41,7 @@ December 21, 2023
 October 12, 2022
 :::
 
-:::{card} How to Pick the Right Canadian Grad School: A Geomatics Perspective
+:::{card} Choosing a GIScience Graduate Program Wisely
 :link: /blog/select_grad_school
 :header: ![grad school](images/grad_school.jpg)
 January 2, 2020
