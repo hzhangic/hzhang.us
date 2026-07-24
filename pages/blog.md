@@ -19,11 +19,11 @@ Thoughts and perspectives on a wide range of topics, from academia to current af
 
 :::{card} H-1B Turmoil in the U.S.: Opportunity or Illusion for Canada?
 :link: /blog/h1b_turmoil
-:header: ![Canadian flag](images/Canadian_flag.png)
+:header: ![Canadian flag](images/Canadian_flag.jpg)
 September 22, 2025 
 :::
 
-:::{card} The Forgotten Suburbs: How Quantitative Micromobility Research Failed to Consider Transportation Equity
+:::{card} The Forgotten Suburbs and Transportation Equity
 :link: /blog/forgotten_suburbs
 :header: ![bike lane](images/bike_lane.png)
 August 28, 2025
