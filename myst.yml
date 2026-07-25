@@ -48,6 +48,8 @@ site:
     style: custom.css
     # analytics_google: G-XXXXXXXXXX
     folders: true
+  url: https://hzhang.us
+  base_url: /
   actions:
     # - title: RSS
     #   url: https://opengeos.org/myst-cv-template/rss.xml

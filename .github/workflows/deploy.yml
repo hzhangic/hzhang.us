@@ -66,9 +66,10 @@ jobs:
 
       - name: Build HTML Assets
         # Remove BASE_URL if using a custom domain (CNAME)
-        env:
-          BASE_URL: /
-        run: myst build --html
+        # env:
+        #   BASE_URL: /
+        # run: myst build --html
+        run: myst build --html --base-url /
 
       # - name: Generate RSS and Atom feeds
       #   run: python generate_rss.py
