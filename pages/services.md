@@ -34,7 +34,7 @@ Dr. Zhang contributes to the academic community through editorial service, peer 
 
 | Period        | Role                        |
 | ------------- | --------------------------- |
-| 2026-present | Early Career Editorial Board Member, [Digital Geography and Society](https://www.sciencedirect.com/journal/digital-geography-and-society) |
+| 2026-present | Early Career Editorial Board Member, [*Digital Geography and Society*](https://www.sciencedirect.com/journal/digital-geography-and-society) |
 
 ---
 
