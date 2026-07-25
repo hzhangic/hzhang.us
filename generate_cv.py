@@ -387,18 +387,49 @@ def gen_awards(awards_text):
     lines.append("#resume-item[\n" + "\n".join(items) + "\n]")
     return "\n\n".join(lines)
 
-
 def gen_publications(research):
-    """Generate Books section from research.md."""
-    section = extract_section(research, "## Book Chapters")
-    if not section:
-        return ""
-    bullets = parse_bullets(section)
-    if not bullets:
-        return ""
-    lines.append("\n== Book Chapters")
-    items = [f"  - {escape_typst(b)}" for b in bullets]
-    return "= Publications\n\n#resume-item[\n" + "\n\n".join(items) + "\n]"
+    """Generate Publications section with subsections from research.md."""
+
+    publication_sections = [
+        "Work in Progress",
+        "Refereed Journal Articles",
+        "Papers in Refereed Conference Proceedings",
+        "Book Chapters",
+        "Refereed Short Papers",
+        "Non-refereed Publications",
+    ]
+
+    output = ["= Publications", ""]
+
+    for title in publication_sections:
+        section = extract_section(research, f"## {title}")
+        if not section:
+            continue
+
+        bullets = parse_bullets(section)
+        if not bullets:
+            continue
+
+        output.append(f"== {escape_typst(title)}")
+        output.append("")
+
+        output.append("#resume-item[")
+        output.extend(f"  - {escape_typst(item)}" for item in bullets)
+        output.append("]")
+        output.append("")
+
+    return "\n".join(output)
+
+# def gen_publications(research):
+#     """Generate Books section from research.md."""
+#     section = extract_section(research, "## Book Chapters")
+#     if not section:
+#         return ""
+#     bullets = parse_bullets(section)
+#     if not bullets:
+#         return ""
+#     items = [f"  - {escape_typst(b)}" for b in bullets]
+#     return "= Publications\n\n#resume-item[\n" + "\n\n".join(items) + "\n]"
 
 
 # def gen_publications(research):
