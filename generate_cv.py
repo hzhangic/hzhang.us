@@ -452,14 +452,19 @@ def gen_grants(grants):
     # Process each dropdown (e.g., As PI)
     for label, content in parse_dropdowns(section):
         entries = split_entries(content)
-        items = [f"  - {escape_typst(e)}" for e in entries if e]
+
+        # Remove existing markdown bullets
+        items = [
+            f"  - {escape_typst(e.lstrip('- ').strip())}"
+            for e in entries
+            if e.strip()
+        ]
 
         if items:
             lines.append(f"\n== {escape_typst(label)}\n")
             lines.append("#resume-item[\n" + "\n\n".join(items) + "\n]")
 
     return "\n".join(lines)
-
 
 def gen_software(software):
     """Generate Open-Source Software section from software.md."""
