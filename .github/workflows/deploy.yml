@@ -70,14 +70,14 @@ jobs:
           BASE_URL: /
         run: myst build --html
 
-      - name: Generate RSS and Atom feeds
-        run: python generate_rss.py
+      # - name: Generate RSS and Atom feeds
+      #   run: python generate_rss.py
 
-      # TODO: Update the URL below with your custom domain
+      # Update the URL below with your custom domain
       - name: Rewrite localhost URLs in sitemap
         run: |
           if [ -f ./_build/html/sitemap.xml ]; then
-            sed -i 's|http://localhost:[0-9]*|https://example.com|g' ./_build/html/sitemap.xml
+            sed -i 's|http://localhost:[0-9]*|https://hzhang.us|g' ./_build/html/sitemap.xml
           fi
 
       - name: Inject Giscus comments into blog posts
