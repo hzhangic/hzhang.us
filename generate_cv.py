@@ -440,33 +440,23 @@ def gen_publications(research):
 
     return "\n".join(output)
 
-def gen_grants(research):
-    """Generate Grants section from research.md."""
-    grants = extract_section(research, "## Grants")
-    if not grants:
+def gen_grants(grants):
+    """Generate Grants section from grants.md."""
+
+    section = extract_section(grants, "## Internal Grants")
+    if not section:
         return ""
 
-    lines = ["= Grants"]
+    lines = ["= Internal Grants"]
 
-    # Funded grants (in dropdown blocks)
-    funded = extract_section(grants, "### Funded")
-    if funded:
-        lines.append("\n== Funded")
-        for label, content in parse_dropdowns(funded):
-            entries = split_entries(content)
-            items = [f"  - {escape_typst(e)}" for e in entries if e]
-            if items:
-                lines.append(f"\n=== {label}\n")
-                lines.append("#resume-item[\n" + "\n\n".join(items) + "\n]")
-
-    # Pending grants (plain text entries)
-    pending = extract_section(grants, "### Pending")
-    if pending:
-        lines.append("\n== Pending")
-        entries = split_entries(pending)
+    # Process each dropdown (e.g., As PI)
+    for label, content in parse_dropdowns(section):
+        entries = split_entries(content)
         items = [f"  - {escape_typst(e)}" for e in entries if e]
+
         if items:
-            lines.append("\n#resume-item[\n" + "\n\n".join(items) + "\n]")
+            lines.append(f"\n== {escape_typst(label)}\n")
+            lines.append("#resume-item[\n" + "\n\n".join(items) + "\n]")
 
     return "\n".join(lines)
 
@@ -668,6 +658,7 @@ def main():
 
     about = read_file(pages, "about.md")
     research = read_file(pages, "publications.md")
+    grants = read_file(pages, "grants.md")
     teaching = read_file(pages, "teaching.md")
     talks = read_file(pages, "talks.md")
     awards = read_file(pages, "awards.md")
@@ -678,11 +669,9 @@ def main():
         gen_education(about),
         gen_appointments(about),
         gen_research_areas(research),
-        # gen_patents(research),
-        gen_awards(awards),
-        # gen_books(research),
         gen_publications(research),
-        # gen_grants(research),
+        gen_grants(grants),
+        gen_awards(awards),
         gen_teaching(teaching),
         gen_mentoring(teaching),
         gen_workshops(talks),
