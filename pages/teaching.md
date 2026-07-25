@@ -15,15 +15,15 @@ Dr. Zhang teaches courses in geographic information science and technology.
 
 | Course | Title | Semesters |
 |--------|-------|-----------|
-| GEOGRAPH 590A | **Advanced Geographic Information Science** | Spring 2027 |
-| ECO 637 | **Spatial Data Analysis in R** | Fall 2026 |
-| GEOGRAPH 696 | **Independent Study** | Fall 2026 |
-| GEOGRAPH 585 | **Introduction to GIS** | Summer 2025 |
-| GEOGRAPH 592B | **GIS Seminar** | Spring 2026 |
-| NRC 440/ECO 640 | **Python for ArcGIS** | Spring 2027, Spring 2026, Spring 2025 |
-| NRC 588/GEOGRAPH 588 | **Web GIS** | Spring 2027, Spring 2026, Spring 2025 |
-| GEOGRAPH 482/682 | **GIS Programming** | Fall 2026, Fall 2025, Fall 2024 |
-| GEOGRAPH 452/652 | **Cartography and Geovisualization** | Fall 2026, Fall 2025, Fall 2024 |
+| GEOGRAPH 590A | Advanced Geographic Information Science | Spring 2027 |
+| ECO 637 | Spatial Data Analysis in R | Fall 2026 |
+| GEOGRAPH 696 | Independent Study | Fall 2026 |
+| GEOGRAPH 585 | Introduction to GIS | Summer 2025 |
+| GEOGRAPH 592B | GIS Seminar | Spring 2026 |
+| NRC 440/ECO 640 | Python for ArcGIS | Spring 2027, Spring 2026, Spring 2025 |
+| NRC 588/GEOGRAPH 588 | Web GIS | Spring 2027, Spring 2026, Spring 2025 |
+| GEOGRAPH 482/682 | GIS Programming | Fall 2026, Fall 2025, Fall 2024 |
+| GEOGRAPH 452/652 | Cartography and Geovisualization | Fall 2026, Fall 2025, Fall 2024 |
 
 ---
 
@@ -31,7 +31,7 @@ Dr. Zhang teaches courses in geographic information science and technology.
 
 | Course | Title | Semesters |
 |--------|-------|-----------|
-| GEOG 264 | **Programming for Environmental Sciences (with R)** | Fall 2023 |
+| GEOG 264 | Programming for Environmental Sciences (with R) | Fall 2023 |
 
 ---
 
@@ -39,7 +39,7 @@ Dr. Zhang teaches courses in geographic information science and technology.
 
 | Course | Title | Semesters |
 |--------|-------|-----------|
-| GEOG 202 | **Statistics and Spatial Analysis** | Fall 2022 |
+| GEOG 202 | Statistics and Spatial Analysis | Fall 2022 |
 
 ---
 
