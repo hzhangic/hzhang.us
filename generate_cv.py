@@ -388,7 +388,7 @@ def gen_awards(awards_text):
     return "\n\n".join(lines)
 
 
-def gen_books(research):
+def gen_publications(research):
     """Generate Books section from research.md."""
     section = extract_section(research, "## Book Chapters")
     if not section:
@@ -396,32 +396,33 @@ def gen_books(research):
     bullets = parse_bullets(section)
     if not bullets:
         return ""
+    lines.append("\n== Book Chapters")
     items = [f"  - {escape_typst(b)}" for b in bullets]
-    return "= Book Chapters\n\n#resume-item[\n" + "\n\n".join(items) + "\n]"
+    return "= Publications\n\n#resume-item[\n" + "\n\n".join(items) + "\n]"
 
 
-def gen_publications(research):
-    """Generate Refereed Publications section from research.md."""
-    section = extract_section(research, "## Refereed Publications")
-    if not section:
-        return ""
+# def gen_publications(research):
+#     """Generate Refereed Publications section from research.md."""
+#     section = extract_section(research, "## Refereed Publications")
+#     if not section:
+#         return ""
 
-    summary = ""
-    m = re.search(r"\*\*Published\*\*.*$", section, re.MULTILINE)
-    if m:
-        summary = escape_typst(m.group())
+#     summary = ""
+#     m = re.search(r"\*\*Published\*\*.*$", section, re.MULTILINE)
+#     if m:
+#         summary = escape_typst(m.group())
 
-    dropdowns = parse_dropdowns(section)
-    lines = [f"= Refereed Publications\n\n{summary}"]
+#     dropdowns = parse_dropdowns(section)
+#     lines = [f"= Refereed Publications\n\n{summary}"]
 
-    for label, content in dropdowns:
-        entries = split_entries(content)
-        items = [f"  - {escape_typst(e)}" for e in entries if e]
-        if items:
-            lines.append(f"\n== {label}\n")
-            lines.append("#resume-item[\n" + "\n\n".join(items) + "\n]")
+#     for label, content in dropdowns:
+#         entries = split_entries(content)
+#         items = [f"  - {escape_typst(e)}" for e in entries if e]
+#         if items:
+#             lines.append(f"\n== {label}\n")
+#             lines.append("#resume-item[\n" + "\n\n".join(items) + "\n]")
 
-    return "\n".join(lines)
+#     return "\n".join(lines)
 
 
 def gen_grants(research):
@@ -664,8 +665,8 @@ def main():
         gen_research_areas(research),
         # gen_patents(research),
         gen_awards(awards),
-        gen_books(research),
-        # gen_publications(research),
+        # gen_books(research),
+        gen_publications(research),
         # gen_grants(research),
         gen_teaching(teaching),
         gen_mentoring(teaching),
