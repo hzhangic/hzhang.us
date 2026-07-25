@@ -65,11 +65,10 @@ jobs:
         run: typst compile cv.typ cv.pdf --font-path ./fonts --ignore-system-fonts
 
       - name: Build HTML Assets
-        # Remove BASE_URL if using a custom domain (CNAME)
-        # env:
-        #   BASE_URL: /
-        # run: myst build --html
-        run: myst build --html --base-url /
+        Remove BASE_URL if using a custom domain (CNAME)
+        env:
+          BASE_URL: /
+        run: myst build --html
 
       # - name: Generate RSS and Atom feeds
       #   run: python generate_rss.py
