@@ -406,55 +406,39 @@ def gen_publications(research):
         if not section:
             continue
 
-        bullets = parse_bullets(section)
-        if not bullets:
-            continue
+        # Handle "Non-refereed Publications" separately because it contains ### subsections
+        if title == "Non-refereed Publications":
+            output.append(f"== {escape_typst(title)}")
+            output.append("")
 
-        output.append(f"== {escape_typst(title)}")
-        output.append("")
+            subheadings = re.findall(r"^### (.+)$", section, flags=re.MULTILINE)
 
-        output.append("#resume-item[")
-        output.extend(f"  - {escape_typst(item)}" for item in bullets)
-        output.append("]")
-        output.append("")
+            for subtitle in subheadings:
+                subsection = extract_section(section, f"### {subtitle}")
+                bullets = parse_bullets(subsection)
+                if not bullets:
+                    continue
+
+                output.append(f"=== {escape_typst(subtitle)}")
+                output.append("")
+                output.append("#resume-item[")
+                output.extend(f"  - {escape_typst(item)}" for item in bullets)
+                output.append("]")
+                output.append("")
+
+        else:
+            bullets = parse_bullets(section)
+            if not bullets:
+                continue
+
+            output.append(f"== {escape_typst(title)}")
+            output.append("")
+            output.append("#resume-item[")
+            output.extend(f"  - {escape_typst(item)}" for item in bullets)
+            output.append("]")
+            output.append("")
 
     return "\n".join(output)
-
-# def gen_publications(research):
-#     """Generate Books section from research.md."""
-#     section = extract_section(research, "## Book Chapters")
-#     if not section:
-#         return ""
-#     bullets = parse_bullets(section)
-#     if not bullets:
-#         return ""
-#     items = [f"  - {escape_typst(b)}" for b in bullets]
-#     return "= Publications\n\n#resume-item[\n" + "\n\n".join(items) + "\n]"
-
-
-# def gen_publications(research):
-#     """Generate Refereed Publications section from research.md."""
-#     section = extract_section(research, "## Refereed Publications")
-#     if not section:
-#         return ""
-
-#     summary = ""
-#     m = re.search(r"\*\*Published\*\*.*$", section, re.MULTILINE)
-#     if m:
-#         summary = escape_typst(m.group())
-
-#     dropdowns = parse_dropdowns(section)
-#     lines = [f"= Refereed Publications\n\n{summary}"]
-
-#     for label, content in dropdowns:
-#         entries = split_entries(content)
-#         items = [f"  - {escape_typst(e)}" for e in entries if e]
-#         if items:
-#             lines.append(f"\n== {label}\n")
-#             lines.append("#resume-item[\n" + "\n\n".join(items) + "\n]")
-
-#     return "\n".join(lines)
-
 
 def gen_grants(research):
     """Generate Grants section from research.md."""
