@@ -36,7 +36,7 @@ Dr. Zhang regularly gives talks and presentations at conferences and universitie
 
 ---
 
-## Workshop Host 
+## Workshop Hosts
 
 - "Python for Data Analysis." McGill GIC Workshop. April 2021.
 - "Data Visualization in Python." McGill GIC Workshop. April 2021.

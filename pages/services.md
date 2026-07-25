@@ -12,7 +12,7 @@ keywords:
 
 Dr. Zhang contributes to the academic community through editorial service, peer review, professional society leadership, and the organization of conferences, workshops, and scholarly events.
 
-## Departmental Service
+## Departmental Services
 
 | Period        | Role                        |
 | ------------- | --------------------------- |
@@ -20,7 +20,7 @@ Dr. Zhang contributes to the academic community through editorial service, peer 
 
 ---
 
-## Professional Service
+## Professional Services
 
 | Period        | Role                        |
 | ------------- | --------------------------- |

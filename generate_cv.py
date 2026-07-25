@@ -358,21 +358,6 @@ def gen_research_areas(research):
         ")"
     )
 
-
-def gen_patents(research):
-    """Generate Patents section from research.md."""
-    section = extract_section(research, "## Patents")
-    if not section:
-        return ""
-    bullets = parse_bullets(section)
-    if not bullets:
-        bullets = split_entries(section)
-    items = [f"  - {escape_typst(b)}" for b in bullets if b]
-    if not items:
-        return ""
-    return "= Patents\n\n#resume-item[\n" + "\n".join(items) + "\n]"
-
-
 def gen_awards(awards_text):
     """Generate Awards & Honors section from awards.md."""
     rows = parse_table(awards_text)
@@ -466,25 +451,6 @@ def gen_grants(grants):
 
     return "\n".join(lines)
 
-def gen_software(software):
-    """Generate Open-Source Software section from software.md."""
-    cards = parse_cards(software)
-    if not cards:
-        return ""
-    lines = ["= Open-Source Software", ""]
-    items = []
-    for name, link, desc in cards:
-        escaped_name = escape_typst(name)
-        gh_path = link.replace("https://github.com/", "")
-        gh_inline = f'#box(baseline: 1pt, fa-icon("github", fill: color-darknight)) #link("{link}")[{gh_path}]'
-        if desc:
-            items.append(f"  - *{escaped_name}*: {escape_typst(desc)} ({gh_inline})")
-        else:
-            items.append(f"  - *{escaped_name}* ({gh_inline})")
-    lines.append("#resume-item[\n" + "\n".join(items) + "\n]")
-    return "\n".join(lines)
-
-
 def gen_teaching(teaching):
     """Generate Teaching section from teaching.md."""
     lines = ["= Teaching"]
@@ -526,7 +492,6 @@ def gen_teaching(teaching):
         lines.append("#resume-item[\n" + "\n".join(items) + "\n]")
 
     return "\n".join(lines)
-
 
 def gen_mentoring(teaching):
     """Generate Mentoring section from teaching.md."""
@@ -587,68 +552,119 @@ def _gen_talks_section(talks, heading, cv_title, include_summary=False):
     return "\n".join(lines)
 
 
-def gen_workshops(talks):
-    """Generate Workshops section from talks.md."""
-    return _gen_talks_section(talks, "## Workshop Host", "Workshops")
+def gen_talks(talks):
+    """Generate Talks section with subsections from talks.md."""
 
+    publication_sections = [
+        "Invited Talks",
+        "Conference Presentations",
+        "Workshop Hosts",
+    ]
 
-def gen_invited_talks(talks):
-    """Generate Invited Talks section from talks.md."""
-    return _gen_talks_section(
-        talks, "## Invited Talks", "Invited Talks", include_summary=True
-    )
+    output = ["= Talks", ""]
 
+    for title in publication_sections:
+        section = extract_section(talks, f"## {title}")
+        if not section:
+            continue
 
-def gen_conf_proceedings(talks):
-    """Generate Conference Proceedings section from talks.md."""
-    section = extract_section(talks, "## Conference Proceedings")
-    if not section:
-        return ""
-    entries = split_entries(section)
-    items = [f"  - {escape_typst(e)}" for e in entries if e]
-    if not items:
-        return ""
-    return "= Conference Proceedings\n\n#resume-item[\n" + "\n".join(items) + "\n]"
+        # Handle "Other Talks" separately because it contains ### subsections
+        if title == "Other Talks":
+            output.append(f"== {escape_typst(title)}")
+            output.append("")
 
+            subheadings = re.findall(r"^### (.+)$", section, flags=re.MULTILINE)
 
-def gen_conf_presentations(talks):
-    """Generate Conference Presentations section from talks.md."""
-    return _gen_talks_section(
-        talks, "## Conference Presentations", "Conference Presentations"
-    )
+            for subtitle in subheadings:
+                subsection = extract_section(section, f"### {subtitle}")
+                bullets = parse_bullets(subsection)
+                if not bullets:
+                    continue
 
+                output.append(f"=== {escape_typst(subtitle)}")
+                output.append("")
+                output.append("#resume-item[")
+                output.extend(f"  - {escape_typst(item)}" for item in bullets)
+                output.append("]")
+                output.append("")
+
+        else:
+            bullets = parse_bullets(section)
+            if not bullets:
+                continue
+
+            output.append(f"== {escape_typst(title)}")
+            output.append("")
+            output.append("#resume-item[")
+            output.extend(f"  - {escape_typst(item)}" for item in bullets)
+            output.append("]")
+            output.append("")
+
+    return "\n".join(output)
 
 def gen_services(services):
-    """Generate all service sections from services.md."""
-    parts = []
+    """Generate Services section with subsections from services.md."""
 
-    # Professional Services
-    prof = extract_section(services, "## Professional Services")
-    if prof:
-        parts.append("= Professional Services\n")
-        result = table_to_items(prof)
-        if result:
-            parts.append(result)
+    service_sections = [
+        "Departmental Services",
+        "Professional Services",
+        "Editorial Activities",
+        "Conference Activities",
+        "Peer Review Activities",
+        "Memberships",
+    ]
 
-    # Institutional Services
-    inst = extract_section(services, "## Institutional Services")
-    if inst:
-        parts.append("= Institutional Services\n")
-        for title, content in find_subsections(inst):
-            parts.append(f"== {escape_typst(title)}\n")
-            result = table_to_items(content)
-            if result:
-                parts.append(result)
+    output = ["= Services", ""]
 
-    # Disciplinary Services
-    disc = extract_section(services, "## Disciplinary Services")
-    if disc:
-        parts.append("= Disciplinary Services\n")
-        for title, content in find_subsections(disc):
-            parts.append(f"== {escape_typst(title)}\n")
-            parts.append(content_with_table(content))
+    for title in service_sections:
+        section = extract_section(services, f"## {title}")
+        if not section:
+            continue
 
-    return "\n\n".join(p for p in parts if p)
+        # Handle "Conference Activities" separately because it contains ### subsections
+        if title == "Conference Activities":
+            output.append(f"== {escape_typst(title)}")
+            output.append("")
+
+            subheadings = re.findall(r"^### (.+)$", section, flags=re.MULTILINE)
+
+            for subtitle in subheadings:
+                subsection = extract_section(section, f"### {subtitle}")
+                if not subsection:
+                    continue
+
+                result = table_to_items(subsection)
+                if not result:
+                    continue
+
+                output.append(f"=== {escape_typst(subtitle)}")
+                output.append("")
+                output.append(result)
+                output.append("")
+
+        elif title == "Memberships":
+            bullets = parse_bullets(section)
+            if not bullets:
+                continue
+
+            output.append(f"== {escape_typst(title)}")
+            output.append("")
+            output.append("#resume-item[")
+            output.extend(f"  - {escape_typst(item)}" for item in bullets)
+            output.append("]")
+            output.append("")
+
+        else:
+            result = table_to_items(section)
+            if not result:
+                continue
+
+            output.append(f"== {escape_typst(title)}")
+            output.append("")
+            output.append(result)
+            output.append("")
+
+    return "\n".join(output)
 
 
 # ============================================================================
@@ -679,10 +695,7 @@ def main():
         gen_awards(awards),
         gen_teaching(teaching),
         gen_mentoring(teaching),
-        gen_workshops(talks),
-        gen_invited_talks(talks),
-        gen_conf_proceedings(talks),
-        gen_conf_presentations(talks),
+        gen_talks(talks),
         gen_services(services),
     ]
 
