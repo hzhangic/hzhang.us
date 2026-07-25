@@ -24,7 +24,7 @@ Dr. Hongyu Zhang is a lecturer in the Department of Earth, Geographic, and Clima
 
 ---
 
-## Appointment
+## Appointments
 
 | Period | Position |
 |--------|----------|
