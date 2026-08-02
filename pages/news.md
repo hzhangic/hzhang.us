@@ -14,6 +14,7 @@ A running log of talks, publications, and milestones, organized by year. The cur
 :::{dropdown} 2026
 :open:
 
+- **2026-07-27** - Accepted to join the [AWS AI & ML Scholars](https://www.udacity.com/scholarships/aws-ai-ml-scholars) program 
 - **2026-07-13** - Joined the Early Career Editorial Board of [*Digital Geography and Society*](https://www.sciencedirect.com/journal/digital-geography-and-society)
 - **2026-06-30** - Joined the Research Committee of the [University Consortium for Geographic Information Science (UCGIS)](https://www.ucgis.org/)
 - **2026-06-24** - Completed the [AWS AI Practitioner Challenge](https://www.udacity.com/certificate/e/71a2e728-32b6-11f1-8cc7-df26d968c7b3) on Udacity
