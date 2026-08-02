@@ -17,7 +17,7 @@ Thoughts and perspectives on a wide range of topics, from academia to current af
 
 ::::{grid} 1 1 2 2
 
-:::{card} H-1B Turmoil in the U.S.: Opportunity or Illusion for Canada?
+<!-- :::{card} H-1B Turmoil in the U.S.: Opportunity or Illusion for Canada?
 :link: /blog/h1b_turmoil
 :header: ![Canadian flag](images/Canadian_flag.jpg)
 September 22, 2025 
@@ -27,7 +27,7 @@ September 22, 2025
 :link: /blog/forgotten_suburbs
 :header: ![bike lane](images/bike_lane.png)
 August 28, 2025
-:::
+::: -->
 
 :::{card} Reimagining GIScience Education for Enhanced Employability
 :link: /blog/giscience_education
